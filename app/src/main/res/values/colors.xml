@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3963FF</color>
+    <color name="colorPrimaryDark">#001D8E</color>
+    <color name="colorAccent">#3963FF</color>
+    <color name="white">#fff</color>
+    <color name="appBg">#F9F9F9</color>
+    <color name="sign_title_text_color">#333333</color>
+    <color name="et_border">#001D8E</color>
+    <color name="black">#000</color>
+    <color name="et_title_gray">#AAAAAA</color>
+    <color name="et_border_gray">#AAAAAA</color>
+    <color name="et_title_black">#333333</color>
+    <color name="et_text_color_blue">#001D8E</color>
+    <color name="tv_link">#001D8E</color>
+    <color name="et_text_color_gray">#AAAAAA</color>
+    <color name="cardColor">#F0F0F0</color>
+    <color name="green">#5BA432</color>
+    <color name="yellow">#FF9100</color>
+    <color name="btn_green">#5BA432</color>
+    <color name="red">#CE0000</color>
+    <color name="month_color">#000</color>
+    <color name="fee_status">#707070</color>
+    <color name="profile_view">#D5D5D5</color>
+    <color name="to_time_bg">#D9E4FF</color>
+    <color name="to_time_text">#004CFF</color>
+    <color name="from_time_text">#25B400</color>
+    <color name="tab_un_selected_color">#707070</color>
+    <drawable name="actionbar_text_color">#ffffff</drawable>
+    <color name="colorFab">#3963FF</color>
+</resources>

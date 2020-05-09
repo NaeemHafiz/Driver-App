@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBg"
+    tools:context=".activities.EnterOTPActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivLogo"
+                    android:layout_width="@dimen/inapp_logo_width"
+                    android:layout_height="@dimen/inapp_logo_height"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/logo_margin_top"
+                    android:src="@drawable/logo_inapp" />
+
+                <TextView
+                    android:id="@+id/title_signin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivLogo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/sign_margin_top"
+                    android:text="@string/enter_top"
+                    android:textColor="@color/sign_title_text_color"
+                    android:textSize="@dimen/sign_title" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_signin"
+                android:layout_marginLeft="@dimen/main_layout_margin_left_right"
+                android:layout_marginTop="@dimen/et_margin_top"
+                android:layout_marginRight="@dimen/main_layout_margin_left_right">
+
+                <TextView
+                    android:id="@+id/sitback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/title_et_margin"
+                    android:gravity="center_horizontal"
+                    android:text="@string/sit_back"
+                    android:textColor="@color/et_title_black"
+                    android:textSize="@dimen/et_title_text_size" />
+
+                <RelativeLayout
+                    android:id="@+id/rlSchoolKey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sitback">
+
+                    <TextView
+                        android:id="@+id/tvEnterOTP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/title_et_margin"
+                        android:text="@string/otp"
+                        android:textColor="@color/et_title_gray"
+                        android:textSize="@dimen/et_title_text_size">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvEnterOTP">
+
+                        <EditText
+                            android:id="@+id/etEnterOTP"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/et_height"
+                            android:background="@drawable/rounded_edittext"
+                            android:hint="Time remaining 02:50"
+                            android:inputType="number"
+                            android:paddingLeft="@dimen/et_text_padding_left"
+                            android:paddingRight="@dimen/et_text_padding_right"
+                            android:textColor="@color/et_text_color_gray"
+                            android:textCursorDrawable="@drawable/et_cursor_color" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_btn_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlSchoolKey"
+                    android:layout_marginTop="@dimen/et_layout_margin_top">
+
+                    <Button
+                        android:id="@+id/btnContinue"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btn_height"
+                        android:background="@drawable/btn_gradient"
+                        android:text="@string/continue_otp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_btn_signup"
+                    android:layout_marginTop="@dimen/signup_m_t"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_dont_have_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/otp_not_rec"
+                        android:textColor="@color/et_title_gray"
+                        android:textSize="@dimen/et_title_text_size" />
+
+                    <TextView
+                        android:id="@+id/tvResendOTP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/link_m_l"
+                        android:layout_marginTop="5sp"
+                        android:layout_toRightOf="@+id/tv_dont_have_account"
+                        android:text="@string/resend_otp"
+                        android:textColor="@color/tv_link"
+                        android:textSize="@dimen/et_title_text_size" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rltopBar"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:background="@drawable/home_gradient"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/school_logo_h"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/actionbar_title_m_l"
+                android:layout_marginBottom="@dimen/school_logo_m_b"
+                android:layout_toRightOf="@+id/btnBack"
+                android:text="@string/profile"
+                android:textColor="@drawable/actionbar_text_color"
+                android:textSize="@dimen/actionbar_title_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/main_layout_margin_left_right"
+        android:layout_marginRight="@dimen/main_layout_margin_left_right"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rltopBar"
+            android:layout_marginTop="@dimen/lv_m_t"
+            android:background="@drawable/profile_border"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/profile_padding_t"
+            android:paddingBottom="@dimen/profile_padding_t">
+
+            <FrameLayout
+                android:id="@+id/flProfile"
+                android:layout_width="@dimen/frame_width"
+                android:layout_height="@dimen/frame_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/et_layout_margin_top">
+
+                <ImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="@dimen/profile_width"
+                    android:layout_height="@dimen/profile_height"
+                    android:layout_gravity="top|center_horizontal"
+                    android:background="@drawable/rounded_profile"
+                    android:src="@drawable/user_profile" />
+
+                <ImageView
+                    android:id="@+id/iv_camera"
+                    android:layout_width="@dimen/edit_profile_icon_w"
+                    android:layout_height="@dimen/edit_profile_icon_h"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/edit_profile_icon"
+
+                    />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvStudentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5sp"
+                android:text="@string/father_name_profile"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/subject_title" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone"
+                    android:textColor="@color/et_title_gray"
+                    android:textSize="@dimen/profile_sub_text_gray" />
+
+                <TextView
+                    android:id="@+id/tvNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/number"
+                    android:textColor="@color/et_title_gray"
+                    android:textSize="@dimen/profile_sub_text_gray" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvEmailTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone"
+                    android:textColor="@color/et_title_gray"
+                    android:textSize="@dimen/profile_sub_text_gray" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/email_address"
+                    android:textColor="@color/et_title_gray"
+                    android:textSize="@dimen/profile_sub_text_gray" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edit_margin_top">
+
+            <Button
+                android:id="@+id/btnEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:background="@drawable/edit_profile_btn"
+                android:text="@string/edit_profile"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.PrivacyPolicyActivity">
+
+    <RelativeLayout
+        android:id="@+id/rltopBar"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:background="@drawable/home_gradient"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/school_logo_h"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/btn_back_w"
+                android:layout_height="@dimen/btn_back_h"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/school_logo_m_l"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/iv_back" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/actionbar_title_m_l"
+                android:layout_marginBottom="@dimen/school_logo_m_b"
+                android:layout_toRightOf="@+id/btnBack"
+                android:text="@string/privacy"
+                android:textColor="@drawable/actionbar_text_color"
+                android:textSize="@dimen/actionbar_title_size" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lv_m_t"
+        android:text="@string/content"
+        android:textSize="@dimen/et_title_text_size" />
+
+</LinearLayout>

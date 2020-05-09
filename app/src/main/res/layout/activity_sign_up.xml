@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBg"
+    tools:context=".activities.SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--            <RelativeLayout-->
+            <!--                android:id="@+id/rlProfile"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="@dimen/et_margin_top">-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/ivProfile"-->
+            <!--                    android:layout_width="150sp"-->
+            <!--                    android:layout_height="150sp"-->
+            <!--                    android:layout_centerHorizontal="true"-->
+            <!--                    android:background="@drawable/rounded_profile"-->
+            <!--                    android:src="@drawable/user_profile"></ImageView>-->
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="30sp"-->
+            <!--                    android:layout_height="30sp"-->
+            <!--                    android:layout_alignParentBottom="true"-->
+            <!--                    android:layout_toRightOf="@+id/ivProfile"-->
+            <!--                    android:layout_marginRight="20sp"-->
+            <!--                    android:src="@drawable/edit_profile_icon"></ImageView>-->
+
+            <!--            </RelativeLayout>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivLogo"
+                    android:layout_width="@dimen/inapp_logo_width"
+                    android:layout_height="@dimen/inapp_logo_height"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/logo_margin_top"
+                    android:src="@drawable/logo_inapp" />
+
+                <TextView
+                    android:id="@+id/title_signin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivLogo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/sign_margin_top"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/sign_title_text_color"
+                    android:textSize="@dimen/sign_title" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/flProfile"
+                android:layout_width="@dimen/frame_width"
+                android:layout_height="@dimen/frame_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/et_layout_margin_top">
+
+                <ImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="@dimen/profile_width"
+                    android:layout_height="@dimen/profile_height"
+                    android:layout_gravity="top|center_horizontal"
+                    android:background="@drawable/rounded_profile"
+                    android:src="@drawable/user_profile" />
+
+                <ImageView
+                    android:id="@+id/iv_camera"
+                    android:layout_width="@dimen/edit_profile_icon_w"
+                    android:layout_height="@dimen/edit_profile_icon_h"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/edit_profile_icon"
+
+                    />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flProfile"
+                android:layout_marginLeft="@dimen/main_layout_margin_left_right"
+                android:layout_marginTop="@dimen/et_margin_top"
+                android:layout_marginRight="@dimen/main_layout_margin_left_right"
+                android:paddingBottom="@dimen/padding_bottom">
+
+
+                <RelativeLayout
+                    android:id="@+id/rlSchoolKey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/et_margin_top">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/title_et_margin"
+                        android:text="@string/name"
+                        android:textColor="@color/et_title_gray"
+                        android:textSize="@dimen/et_title_text_size">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvName">
+
+                        <EditText
+                            android:id="@+id/etUserName"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/et_height"
+                            android:background="@drawable/rounded_edittext"
+                            android:hint="Rohit"
+                            android:inputType="text"
+                            android:paddingLeft="@dimen/et_text_padding_left"
+                            android:paddingRight="@dimen/et_text_padding_right"
+                            android:textColor="@color/et_text_color_gray"
+                            android:textCursorDrawable="@drawable/et_cursor_color" />
+
+                        <ImageView
+                            android:id="@+id/ivUser"
+                            android:layout_width="@dimen/et_icon_height_width"
+                            android:layout_height="@dimen/et_icon_height_width"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="@dimen/icon_m_r"
+                            android:src="@drawable/user" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlSchoolKey"
+                    android:layout_marginTop="@dimen/et_layout_margin_top">
+
+                    <TextView
+                        android:id="@+id/tvPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/title_et_margin"
+                        android:text="@string/phone"
+                        android:textColor="@color/et_title_gray"
+                        android:textSize="@dimen/et_title_text_size">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvPhone">
+
+                        <EditText
+                            android:id="@+id/etPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/et_height"
+                            android:background="@drawable/rounded_edittext"
+                            android:hint="0091 22 1234 5678"
+                            android:inputType="phone"
+                            android:paddingLeft="@dimen/et_text_padding_left"
+                            android:paddingRight="@dimen/et_text_padding_right"
+                            android:textColor="@color/et_text_color_gray"
+                            android:textCursorDrawable="@drawable/et_cursor_color" />
+
+                        <ImageView
+                            android:id="@+id/ivPhone"
+                            android:layout_width="@dimen/et_icon_height_width"
+                            android:layout_height="@dimen/et_icon_height_width"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="@dimen/icon_m_r"
+                            android:src="@drawable/phone"
+                            android:tint="@color/et_text_color_gray" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlPhone"
+                    android:layout_marginTop="@dimen/et_layout_margin_top">
+
+                    <TextView
+                        android:id="@+id/tvPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/title_et_margin"
+                        android:text="@string/password"
+                        android:textColor="@color/et_title_gray"
+                        android:textSize="@dimen/et_title_text_size">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvPassword">
+
+                        <EditText
+                            android:id="@+id/etPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/et_height"
+                            android:background="@drawable/rounded_edittext"
+                            android:hint="******"
+                            android:inputType="textPassword"
+                            android:paddingLeft="@dimen/et_text_padding_left"
+                            android:paddingRight="@dimen/et_text_padding_right"
+                            android:textColor="@color/et_text_color_gray"
+                            android:textCursorDrawable="@drawable/et_cursor_color" />
+
+                        <ImageView
+                            android:id="@+id/ivEye"
+                            android:layout_width="@dimen/et_icon_height_width"
+                            android:layout_height="@dimen/et_icon_height_width"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="@dimen/icon_m_r"
+                            android:src="@drawable/eye">
+
+                        </ImageView>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_btn_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlPassword"
+                    android:layout_marginTop="@dimen/et_layout_margin_top">
+
+                    <Button
+                        android:id="@+id/btnSignUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btn_height"
+                        android:background="@drawable/btn_gradient"
+                        android:text="@string/sign_up"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_btn_signup"
+                    android:layout_marginTop="@dimen/signup_m_t"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_dont_have_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/already_have_ac"
+                        android:textColor="@color/et_title_gray"
+                        android:textSize="@dimen/et_title_text_size" />
+
+                    <TextView
+                        android:id="@+id/tvSignIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/link_m_l"
+                        android:layout_marginTop="5sp"
+                        android:layout_toRightOf="@+id/tv_dont_have_account"
+                        android:text="@string/sign_in"
+                        android:textColor="@color/tv_link"
+                        android:textSize="@dimen/et_title_text_size" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

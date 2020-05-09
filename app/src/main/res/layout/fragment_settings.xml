@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rltopBar"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:background="@drawable/home_gradient"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/school_logo_h"
+                    android:layout_alignParentBottom="true">
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/actionbar_title_m_l"
+                        android:layout_marginBottom="@dimen/school_logo_m_b"
+                        android:text="@string/settings"
+                        android:textColor="@drawable/actionbar_text_color"
+                        android:textSize="@dimen/actionbar_title_size" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/main_layout_margin_left_right"
+                android:layout_marginRight="@dimen/main_layout_margin_left_right"
+                android:layout_marginBottom="@dimen/powered_by_m_b"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llAboutUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lv_m_t"
+                    android:background="@drawable/list_view_left_bar"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/row_inner_m_t"
+                    android:paddingBottom="@dimen/row_inner_m_t">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/ivSubject"
+                            android:layout_width="@dimen/iv_width_icon"
+                            android:layout_height="@dimen/iv_width_icon"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/lv_m_left_settings"
+                            android:src="@drawable/about_us" />
+
+                        <TextView
+                            android:id="@+id/tvAbout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/lv_m_left_settings"
+                            android:layout_toRightOf="@+id/ivSubject"
+                            android:text="@string/aboutus"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/subject_title" />
+
+                        <ImageView
+                            android:id="@+id/ivCricle"
+                            android:layout_width="@dimen/iv_icon_right"
+                            android:layout_height="@dimen/iv_icon_right"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/inner_list_m_r"
+                            android:backgroundTint="@color/green"
+                            android:src="@drawable/icon_right" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llPrivacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lv_m_t"
+                    android:background="@drawable/list_view_left_bar"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/row_inner_m_t"
+                    android:paddingBottom="@dimen/row_inner_m_t">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/ivPri"
+                            android:layout_width="@dimen/iv_width_icon"
+                            android:layout_height="@dimen/iv_width_icon"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/lv_m_left_settings"
+                            android:src="@drawable/privacy_policy" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/lv_m_left_settings"
+                            android:layout_toRightOf="@+id/ivPri"
+                            android:text="@string/privacy"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/subject_title" />
+
+                        <ImageView
+                            android:layout_width="@dimen/iv_icon_right"
+                            android:layout_height="@dimen/iv_icon_right"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/inner_list_m_r"
+                            android:backgroundTint="@color/green"
+                            android:src="@drawable/icon_right" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llTerms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lv_m_t"
+                    android:background="@drawable/list_view_left_bar"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/row_inner_m_t"
+                    android:paddingBottom="@dimen/row_inner_m_t">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/ivTerms"
+                            android:layout_width="@dimen/iv_width_icon"
+                            android:layout_height="@dimen/iv_width_icon"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/lv_m_left_settings"
+                            android:src="@drawable/terms_conditions" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/lv_m_left_settings"
+                            android:layout_toRightOf="@+id/ivTerms"
+                            android:text="@string/terms"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/subject_title" />
+
+                        <ImageView
+                            android:layout_width="@dimen/iv_icon_right"
+                            android:layout_height="@dimen/iv_icon_right"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/inner_list_m_r"
+                            android:backgroundTint="@color/green"
+                            android:src="@drawable/icon_right" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lv_m_t"
+                    android:background="@drawable/list_view_left_bar"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/row_inner_m_t"
+                    android:paddingBottom="@dimen/row_inner_m_t">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/ivContact"
+                            android:layout_width="@dimen/iv_width_icon"
+                            android:layout_height="@dimen/iv_width_icon"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/lv_m_left_settings"
+                            android:src="@drawable/contact_us" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/lv_m_left_settings"
+                            android:layout_toRightOf="@+id/ivContact"
+                            android:text="@string/contact"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/subject_title" />
+
+                        <ImageView
+                            android:layout_width="@dimen/iv_icon_right"
+                            android:layout_height="@dimen/iv_icon_right"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/inner_list_m_r"
+                            android:backgroundTint="@color/green"
+                            android:src="@drawable/icon_right" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lv_m_t"
+                    android:background="@drawable/list_view_left_bar"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/row_inner_m_t"
+                    android:paddingBottom="@dimen/row_inner_m_t">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/ivRate"
+                            android:layout_width="@dimen/iv_width_icon"
+                            android:layout_height="@dimen/iv_width_icon"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/lv_m_left_settings"
+                            android:src="@drawable/rate_us" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/lv_m_left_settings"
+                            android:layout_toRightOf="@+id/ivRate"
+                            android:text="@string/rate"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/subject_title" />
+
+                        <ImageView
+                            android:layout_width="@dimen/iv_icon_right"
+                            android:layout_height="@dimen/iv_icon_right"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/inner_list_m_r"
+                            android:backgroundTint="@color/green"
+                            android:src="@drawable/icon_right" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llNotifications"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lv_m_t"
+                    android:background="@drawable/list_view_left_bar"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/row_inner_m_t"
+                    android:paddingBottom="@dimen/row_inner_m_t">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/ivNotification"
+                            android:layout_width="@dimen/iv_width_icon"
+                            android:layout_height="@dimen/iv_width_icon"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/lv_m_left_settings"
+                            android:src="@drawable/notifications" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/lv_m_left_settings"
+                            android:layout_toRightOf="@+id/ivNotification"
+                            android:text="@string/notifications"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/subject_title" />
+
+                        <Switch
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/inner_list_m_r"
+                            android:checked="true"
+                            android:thumbTint="@color/white"
+                            android:trackTint="@color/green">
+
+                        </Switch>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llChangePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lv_m_t"
+                    android:background="@drawable/list_view_left_bar"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/row_inner_m_t"
+                    android:paddingBottom="@dimen/row_inner_m_t">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/ivPassword"
+                            android:layout_width="@dimen/iv_width_icon"
+                            android:layout_height="@dimen/iv_width_icon"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/lv_m_left_settings"
+                            android:src="@drawable/change_password" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/lv_m_left_settings"
+                            android:layout_toRightOf="@+id/ivPassword"
+                            android:text="@string/password_change"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/subject_title" />
+
+                        <ImageView
+                            android:layout_width="@dimen/iv_icon_right"
+                            android:layout_height="@dimen/iv_icon_right"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/inner_list_m_r"
+                            android:backgroundTint="@color/green"
+                            android:src="@drawable/icon_right" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lv_m_t"
+                    android:background="@drawable/list_view_left_bar"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/row_inner_m_t"
+                    android:paddingBottom="@dimen/row_inner_m_t">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/ivLogout"
+                            android:layout_width="@dimen/iv_width_icon"
+                            android:layout_height="@dimen/iv_width_icon"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/lv_m_left_settings"
+                            android:src="@drawable/log_out" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/lv_m_left_settings"
+                            android:layout_toRightOf="@+id/ivLogout"
+                            android:text="@string/log_out"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/subject_title" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/powered_by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/powered_by_company_title"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/powered_by_tv_size"
+        android:textStyle="bold" />
+</RelativeLayout>
