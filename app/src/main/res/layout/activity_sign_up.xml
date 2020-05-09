@@ -16,29 +16,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!--            <RelativeLayout-->
-            <!--                android:id="@+id/rlProfile"-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_marginTop="@dimen/et_margin_top">-->
 
-            <!--                <ImageView-->
-            <!--                    android:id="@+id/ivProfile"-->
-            <!--                    android:layout_width="150sp"-->
-            <!--                    android:layout_height="150sp"-->
-            <!--                    android:layout_centerHorizontal="true"-->
-            <!--                    android:background="@drawable/rounded_profile"-->
-            <!--                    android:src="@drawable/user_profile"></ImageView>-->
-
-            <!--                <ImageView-->
-            <!--                    android:layout_width="30sp"-->
-            <!--                    android:layout_height="30sp"-->
-            <!--                    android:layout_alignParentBottom="true"-->
-            <!--                    android:layout_toRightOf="@+id/ivProfile"-->
-            <!--                    android:layout_marginRight="20sp"-->
-            <!--                    android:src="@drawable/edit_profile_icon"></ImageView>-->
-
-            <!--            </RelativeLayout>-->
 
             <RelativeLayout
                 android:layout_width="match_parent"

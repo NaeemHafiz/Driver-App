@@ -17,7 +17,7 @@
             <RelativeLayout
                 android:id="@+id/rltopBar"
                 android:layout_width="match_parent"
-                android:layout_height="100sp"
+                android:layout_height="48dp"
                 android:background="@drawable/home_gradient"
                 android:visibility="visible">
 
